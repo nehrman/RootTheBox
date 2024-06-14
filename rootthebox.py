@@ -1166,7 +1166,7 @@ if __name__ == "__main__":
             logging.info("Running Docker Setup")
             if os.path.isfile(options.config):
                 options.parse_config_file(options.config)
-            options.sql_database = "files/rootthebox.db"
+            options.sql_database = "rootthebox"
             options.admin_ips = []  # Remove admin ips due to docker 127.0.0.1 mapping
             options.memcached = "memcached"
             options.x_headers = True
