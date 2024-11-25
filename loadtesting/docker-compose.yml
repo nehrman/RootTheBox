@@ -1,0 +1,10 @@
+services:
+  load-testing:
+    restart: always
+    image: load-test
+    networks:
+      - rtb_network
+
+networks:
+  rtb_network:
+    driver: bridge
